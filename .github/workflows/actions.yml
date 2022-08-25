@@ -1,8 +1,12 @@
 name: Actions
 on:
-  push:
-    branches:
-      - main
+  # push:
+  #   branches:
+  #     - main
+
+  pull_request:
+    - main
+    types: [ closed ]
 
 jobs:
   bulid:
