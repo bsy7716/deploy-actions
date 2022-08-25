@@ -1,0 +1,12 @@
+name: Actions
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  bulid:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: npm ci
